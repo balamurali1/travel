@@ -1,0 +1,14 @@
+{% extends "bus/base.html" %}
+{% block content %}
+ 
+ 
+	<form method="POST"> 
+		{% csrf_token %}
+		<br><br>
+
+		{{ form.as_p }}
+				
+		<input type="submit" name="" value="Trip Update">
+	</form>
+	
+{% endblock %}

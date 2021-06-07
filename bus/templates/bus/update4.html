@@ -1,0 +1,12 @@
+{% extends "bus/base.html" %}
+{% block content %}
+	<form method="POST">
+		{% csrf_token %}
+		<br><br>
+
+ 		{{ form.as_table }}<br><br>
+		
+		<input type="submit" name="" value="Update User">
+	</form>
+	
+{% endblock %}
